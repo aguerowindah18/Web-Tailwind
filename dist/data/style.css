@@ -1,0 +1,16 @@
+body {
+  min-height: 50000000px;
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #8cc3d3;
+}
+
+.single_progress {
+  margin-bottom: 15px;
+}
+
+#project {
+  background-color: #8cc3d3;
+}
