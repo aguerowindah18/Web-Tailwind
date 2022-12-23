@@ -45,3 +45,46 @@ darkToggle.addEventListener('click', function () {
     localStorage.theme = 'light';
   }
 });
+
+// form alert dissmis button
+function closeAlert(event) {
+  let element = event.target;
+  while (element.nodeName !== 'BUTTON') {
+    element = element.parentNode;
+  }
+  element.parentNode.parentNode.removeChild(element.parentNode);
+}
+
+// Contact form js
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyiML-117nuEWKDrmgySyO-UZY3YglnhHLDfNKhU9ew2F8Th3HBOnZl0AyXLQi96tIN/exec';
+const form = document.forms['submit-to-google-sheet'];
+const btnKirim = document.querySelector('.btn-kirim');
+const btnLoading = document.querySelector('.btn-loading');
+const myAlert = document.querySelector('.my-alert');
+const myAlert2 = document.querySelector('.my-alert2');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  // ketika tombol submit di klik
+  // tampilkan tombol loading, hilangkan tombol kirim
+  btnLoading.classList.toggle('hidden');
+  btnKirim.classList.toggle('hidden');
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then((response) => {
+      // tampilkan tombol kirim, hilangkan tombol loading
+      btnLoading.classList.toggle('hidden');
+      btnKirim.classList.toggle('hidden');
+      // reset form
+      form.reset();
+      // tampilkan alert berhasil
+      myAlert.classList.toggle('hidden');
+      console.log('Success!', response);
+    })
+
+    .catch((error) => {
+      // tampilkan alert gagal
+      myAlert2.classList.toggle('hidden');
+      console.error('Error!', error.message);
+    });
+});
