@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Tailwind CSS -->
     <link href="dist/output.css" rel="stylesheet" />
     <!-- Dark mode Tailwind CSS -->
@@ -82,13 +84,13 @@
     <section id="home" class="pt-24 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
+          <div id="tulisanbawahfoto" class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">Halo guys👋, saya<span class="mt-1 block text-4xl font-bold text-dark dark:text-white"> Aguero Windah</span></h1>
             <h2 class="mb-2 text-lg font-medium text-secondary lg:text-2xl">Student & <span class="text-dark dark:text-slate-400">Programmer</span></h2>
-            <p class="mb-10 font-medium leading-relaxed text-secondary">Tetaplah belajar, <span class="font-bold text-dark dark:text-slate-400">walaupun harus dari awal</span></p>
+            <p id="paragrafmotivasi" class="mb-10 font-medium leading-relaxed text-secondary"></p>
             <a href="blog.html" class="hover: rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Blog</a>
           </div>
-          <div class="w-full self-end px-4 lg:w-1/2">
+          <div id="fotoprofil" class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-10 lg:right-8 lg:mt-9">
               <img src="dist/data/foto profil.png" alt="Aguero Windah" class="relative z-10 mx-auto max-w-full rounded-md" />
               <span class="md:scale-120 absolute bottom-20 left-1/2 -translate-x-1/2">
@@ -111,15 +113,19 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-5 w-full px-4 lg:w-1/2">
-            <h4 class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
-            <h3 class="mb-5 max-w-lg text-3xl font-bold text-dark dark:text-white lg:text-4xl">Saya adalah seorang pelajar SMA</h3>
-            <p class="mb-3 max-w-xl text-base font-medium text-secondary lg:text-lg">
+            <h4 data-aos="fade-right" data-aos-offset="250" data-aos-duration="700" class="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
+            <h3 data-aos="fade-right" data-aos-offset="250" data-aos-duration="700" class="mb-5 max-w-lg text-3xl font-bold text-dark dark:text-white lg:text-4xl">Saya adalah seorang pelajar SMA</h3>
+            <p data-aos="fade-right" data-aos-offset="250" data-aos-duration="700" class="mb-3 max-w-xl text-base font-medium text-secondary lg:text-lg">
               Saya mencoba dan belajar programming secara otodidak. Pembelajaran yang saya lakukan kebanyakan melalui Youtube ataupun melalui artikel dan website lainnya yang tersedia di Google.
             </p>
-            <p class="mb-3 max-w-xl text-base font-medium text-secondary lg:text-lg">Berikut ini beberapa Bahasa Pemrograman dan Framework yang saya ketahui.</p>
-            <div class="mb-4 flex items-center">
+            <p data-aos="fade-right" data-aos-offset="250" data-aos-duration="700" class="mb-3 max-w-xl text-base font-medium text-secondary lg:text-lg">Berikut ini beberapa Bahasa Pemrograman dan Framework yang saya ketahui.</p>
+            <div data-aos="fade-right" data-aos-offset="250" data-aos-duration="700" class="mb-4 flex items-center">
               <!-- html -->
               <a
+                data-aos="fade-right"
+                data-aos-offset="250"
+                data-aos-duration="700"
+                data-aos-delay="100"
                 class="mr-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-300 text-slate-300 opacity-80 transition duration-200 ease-in-out hover:border-red-600 hover:text-red-600 hover:opacity-100"
               >
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" class="fill-current">
@@ -132,6 +138,10 @@
 
               <!-- css -->
               <a
+                data-aos="fade-right"
+                data-aos-offset="250"
+                data-aos-duration="700"
+                data-aos-delay="200"
                 class="mr-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-300 text-slate-300 opacity-80 transition duration-200 ease-in-out hover:border-blue-600 hover:text-blue-600 hover:opacity-100"
               >
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="30" class="fill-current">
@@ -143,6 +153,10 @@
               </a>
               <!-- javascript -->
               <a
+                data-aos="fade-right"
+                data-aos-offset="250"
+                data-aos-duration="700"
+                data-aos-delay="300"
                 class="mr-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-300 text-slate-300 opacity-80 transition duration-200 ease-in-out hover:border-yellow-300 hover:text-yellow-300 hover:opacity-100"
               >
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="25" class="fill-current">
@@ -155,6 +169,10 @@
 
               <!-- boostrap -->
               <a
+                data-aos="fade-right"
+                data-aos-offset="250"
+                data-aos-duration="700"
+                data-aos-delay="400"
                 class="mr-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-300 text-slate-300 opacity-80 transition duration-200 ease-in-out hover:border-violet-600 hover:text-violet-600 hover:opacity-100"
               >
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="35" class="fill-current">
@@ -167,6 +185,10 @@
 
               <!-- tailwind -->
               <a
+                data-aos="fade-right"
+                data-aos-offset="250"
+                data-aos-duration="700"
+                data-aos-delay="500"
                 class="mr-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border border-slate-300 text-slate-300 opacity-80 transition duration-200 ease-in-out hover:border-teal-500 hover:text-teal-500 hover:opacity-100"
               >
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="38" class="fill-current">
@@ -179,11 +201,19 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="mb-2 text-2xl font-semibold text-dark dark:text-white lg:mb-14 lg:pt-11 lg:text-3xl">Mari berteman</h3>
-            <p class="mb-3 text-base font-medium text-secondary lg:text-lg">Ayo saling terkoneksi melalui Sosial media dibawah ini.</p>
+            <h3 data-aos="fade-left" data-aos-offset="250" data-aos-duration="700" class="mb-2 text-2xl font-semibold text-dark dark:text-white lg:mb-14 lg:pt-11 lg:text-3xl">Mari berteman</h3>
+            <p data-aos="fade-left" data-aos-offset="250" data-aos-duration="700" class="mb-3 text-base font-medium text-secondary lg:text-lg">Ayo saling terkoneksi melalui Sosial media dibawah ini.</p>
             <div class="flex items-center">
               <!-- Instagram -->
-              <a href="https://instagram.com/agrwindah" target="_blank" class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a
+                data-aos="fade-left"
+                data-aos-offset="250"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+                href="https://instagram.com/agrwindah"
+                target="_blank"
+                class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
                 <svg class="fill-current" role="img" width="23" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
                   <path
@@ -194,6 +224,10 @@
 
               <!-- Youtbe -->
               <a
+                data-aos="fade-left"
+                data-aos-offset="250"
+                data-aos-duration="1000"
+                data-aos-delay="200"
                 href="https://www.youtube.com/channel/UCsZkpRghpaU4xYgQM1_rUQg"
                 target="_blank"
                 class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
@@ -207,7 +241,15 @@
               </a>
 
               <!-- Github -->
-              <a href="https://github.com/aguerowindah18" target="_blank" class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a
+                data-aos="fade-left"
+                data-aos-offset="250"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                href="https://github.com/aguerowindah18"
+                target="_blank"
+                class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
                 <svg class="fill-current" role="img" width="25" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -218,6 +260,10 @@
 
               <!-- Spotify -->
               <a
+                data-aos="fade-left"
+                data-aos-offset="250"
+                data-aos-duration="1000"
+                data-aos-delay="400"
                 href="https://open.spotify.com/user/271qbhvth8jstqwxjmxgdao7g?si=sCBfBXkaQU6mz5rvVZ4WrQ"
                 target="_blank"
                 class="mr-4 flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
@@ -240,13 +286,13 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Projects & Gallery</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Kegiatan Saya</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Berikut ini beberapa dokumentasi kegiatan-kegiatan saya.</p>
+            <h4 data-aos="zoom-in-up" class="mb-2 text-lg font-semibold text-primary">Projects & Gallery</h4>
+            <h2 data-aos="fade-up" data-aos-delay="100" class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Kegiatan Saya</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-md font-medium text-secondary md:text-lg">Kegiatan dan project terbaru yang saya lakukan.</p>
           </div>
         </div>
         <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
-          <div class="mb-12 p-4 md:w-1/2">
+          <div id="img-project" class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <iframe
                 class="h-80 w-full"
@@ -265,7 +311,7 @@
               Kristen 1 Tomohon
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div id="img-project" class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/data/img/thumbs/2.png" alt="Project 2" width="w-full" />
             </div>
@@ -274,7 +320,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis atque obcaecati consectetur deleniti quae quibusdam nulla harum dolore fugiat, accusantium eaque. Sed et ducimus placeat qui asperiores animi iste a.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div id="img-project" class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/data/img/thumbs/3.png" alt="Project 3" width="w-full" />
             </div>
@@ -283,7 +329,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis atque obcaecati consectetur deleniti quae quibusdam nulla harum dolore fugiat, accusantium eaque. Sed et ducimus placeat qui asperiores animi iste a.
             </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div id="img-project" class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/data/img/thumbs/4.png" alt="Project 4" width="w-full" />
             </div>
@@ -300,30 +346,30 @@
     <section id="clients" class="bg-slate-700 pt-32 pb-32 dark:bg-gray-300">
       <div class="w-full px-4">
         <div class="mx-auto mb-16 text-center">
-          <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
-          <h2 class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Pernah Bekerjasama</h2>
-          <p class="text-md font-medium text-secondary md:text-lg">Cuma coba-coba.</p>
+          <h4 data-aos="zoom-in-up" class="mb-2 text-lg font-semibold text-primary">Clients</h4>
+          <h2 data-aos="fade-up" data-aos-delay="100" class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl">Pernah Bekerjasama</h2>
+          <p data-aos="fade-up" data-aos-delay="200" class="text-md font-medium text-secondary md:text-lg">Cuma coba-coba.</p>
         </div>
       </div>
       <div class="w-full px-4">
         <div class="flex flex-wrap items-center justify-center">
-          <a href="https://google.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <a id="client" href="https://google.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
             <title>Google</title>
             <img src="dist/data/clients/Google_2015_logo.svg.png" alt="Google" />
           </a>
-          <a href="https://polri.go.id/" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <a id="client" href="https://polri.go.id/" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
             <title>Polri</title>
             <img width="100" src="dist/data/clients/Lambang_Polri.png" alt="Polri" />
           </a>
-          <a href="https://youtube.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <a id="client" href="https://youtube.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
             <title>Youtube</title>
             <img src="dist/data/clients/YouTube_Logo_2017.svg.png" alt="Youtube" />
           </a>
-          <a href="https://spotify.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <a id="client" href="https://spotify.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
             <title>Spotify</title>
             <img src="dist/data/clients/Spotify_logo_with_text.svg.png" alt="Spotify" />
           </a>
-          <a href="https://tokopedia.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
+          <a id="client" href="https://tokopedia.com" target="_blank" class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8">
             <title>Tokopedia</title>
             <img src="dist/data/clients/Tokopedia.svg.png" alt="Tokopedia" />
           </a>
@@ -336,13 +382,15 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Artikel terkini</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Gambar ganti-ganti, karna random dari web <a class="hover:text-primary" href="http://unplash.com" target="_blank" rel="noopener noreferrer">unplash.com</a></p>
+            <h4 data-aos="zoom-in-up" class="mb-2 text-lg font-semibold text-primary">Blog</h4>
+            <h2 data-aos="fade-up" data-aos-delay="100" class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Artikel terkini</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-md font-medium text-secondary md:text-lg">
+              Gambar ganti-ganti, karna random dari web <a class="hover:text-primary" href="http://unplash.com" target="_blank" rel="noopener noreferrer">unplash.com</a>
+            </p>
           </div>
         </div>
         <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div id="card-blog" class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
               <a href="">
                 <img src="https://source.unsplash.com/360x200?indonesia" alt="Programming" class="w-full" />
@@ -355,7 +403,7 @@
               </div>
             </div>
           </div>
-          <div class="xl:w-1/3r w-full px-4 lg:w-1/2">
+          <div id="card-blog" class="xl:w-1/3r w-full px-4 lg:w-1/2">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
               <a href="">
                 <img src="https://source.unsplash.com/360x200?jokowi" alt="Programming" class="w-full" />
@@ -368,7 +416,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div id="card-blog" class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
               <a href="">
                 <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Programming" class="w-full" />
@@ -381,7 +429,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div id="card-blog" class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
               <a href="">
                 <img src="https://source.unsplash.com/360x200?choir" alt="Programming" class="w-full" />
@@ -394,7 +442,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+          <div id="card-blog" class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800">
               <a href="">
                 <img src="https://source.unsplash.com/360x200?world+cup" alt="Programming" class="w-full" />
@@ -416,38 +464,38 @@
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
-            <h2 class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
-            <p class="text-md font-medium text-secondary md:text-lg">Tulis apapun. Btw ini kirim betulan. :)</p>
+            <h4 data-aos="zoom-in-up" class="mb-2 text-lg font-semibold text-primary">Contact</h4>
+            <h2 data-aos="fade-up" data-aos-delay="100" class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl">Hubungi Saya</h2>
+            <p data-aos="fade-up" data-aos-delay="200" class="text-md font-medium text-secondary md:text-lg">Tulis apapun. Btw ini kirim betulan. :)</p>
           </div>
         </div>
         <form name="submit-to-google-sheet">
           <div class="w-full lg:mx-auto lg:w-2/3">
-            <div class="my-alert relative mb-4 hidden w-full rounded-lg border-0 bg-green-400 px-6 py-4 text-white">
+            <div data-aos="zoom-out" class="my-alert relative mb-4 hidden w-full rounded-lg border-0 bg-green-400 px-6 py-4 text-white">
               <span class="mr-8 inline-block align-middle"> <b class="capitalize">Terima Kasih!</b> Pesan anda sudah diterima. </span>
               <button class="absolute right-0 top-0 mt-4 mr-6 bg-transparent text-2xl leading-none outline-none focus:outline-none" onclick="closeAlert(event)">
                 <span>x</span>
               </button>
             </div>
-            <div class="my-alert2 relative mb-4 hidden w-full rounded-lg border-0 bg-red-400 px-6 py-4 text-white">
+            <div data-aos="zoom-out" class="my-alert2 relative mb-4 hidden w-full rounded-lg border-0 bg-red-400 px-6 py-4 text-white">
               <span class="mr-8 inline-block align-middle"> <b class="capitalize">Coba Lagi!</b> Pesan anda gagal terkirim. </span>
               <button class="absolute right-0 top-0 mt-4 mr-6 bg-transparent text-2xl leading-none outline-none focus:outline-none" onclick="closeAlert(event)">
                 <span>x</span>
               </button>
             </div>
-            <div class="mb-8 w-full px-4">
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="100" class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold text-primary">Nama</label>
               <input name="nama" type="text" id="name" class="w-full rounded-md bg-slate-100 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
             </div>
-            <div class="mb-8 w-full px-4">
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="200" class="mb-8 w-full px-4">
               <label for="emai" class="text-base font-bold text-primary">Email</label>
               <input name="email" type="email" id="email" class="w-full rounded-md bg-slate-100 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
             </div>
-            <div class="mb-8 w-full px-4">
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="300" class="mb-8 w-full px-4">
               <label for="pesan" class="text-base font-bold text-primary">Pesan</label>
               <textarea name="pesan" type="pesan" id="pesan" class="h-32 w-full rounded-md bg-slate-100 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
             </div>
-            <div class="w-full px-4">
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="400" class="w-full px-4">
               <button type="submit" class="btn-kirim w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Kirim</button>
               <button type="submit" class="btn-loading flex hidden w-full items-center justify-center rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
                 <svg class="block h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -582,5 +630,61 @@
 
     <!-- Javascript src -->
     <script src="dist/js/script.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const imgProject = document.querySelectorAll('#img-project');
+
+      imgProject.forEach((img, i) => {
+        img.dataset.aos = 'fade-down';
+        img.dataset.aosDelay = i * 150;
+        img.dataset.aosDuration = '1000';
+        img.dataset.aosOffset = '250';
+      });
+
+      const client = document.querySelectorAll('#client');
+
+      client.forEach((img, i) => {
+        img.dataset.aos = 'zoom-in';
+        img.dataset.aosDelay = i * 50;
+        img.dataset.aosDuration = '700';
+        img.dataset.aosOffset = '250';
+      });
+
+      const blog = document.querySelectorAll('#card-blog');
+
+      blog.forEach((img, i) => {
+        img.dataset.aos = 'flip-left';
+        img.dataset.aosDelay = i * 50;
+        img.dataset.aosDuration = '700';
+        img.dataset.aosOffset = '250';
+      });
+      AOS.init();
+    </script>
+    <!-- GSP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('#paragrafmotivasi', {
+        duration: 1.5,
+        delay: 1.5,
+        text: 'Tetaplah belajar, walaupun harus dari awal.',
+      });
+      gsap.from('#tulisanbawahfoto', {
+        duration: 1,
+        x: -50,
+        opacity: 0,
+        delay: 0.5,
+        ease: 'back',
+      });
+      gsap.from('#fotoprofil', {
+        duration: 1,
+        x: -50,
+        opacity: 0,
+        delay: 0.8,
+        ease: 'bounce',
+      });
+    </script>
   </body>
 </html>
