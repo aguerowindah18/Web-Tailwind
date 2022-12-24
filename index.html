@@ -24,7 +24,7 @@
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary"> aguerowindah </a>
+            <a href="#home" class="block py-6 text-lg font-bold text-primary">aguerowindah</a>
           </div>
           <div class="flex items-center justify-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
@@ -721,7 +721,9 @@
         img.dataset.aosDuration = '700';
         img.dataset.aosOffset = '250';
       });
-      AOS.init({});
+      AOS.init({
+        once: true,
+      });
     </script>
     <!-- GSP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
